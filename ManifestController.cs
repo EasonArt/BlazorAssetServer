@@ -11,7 +11,7 @@ public class ManifestsController : ControllerBase
 {
     private const int MatchTimeout = 1000;
     private const string PlatformRegex = "iOS|Android";
-    private const string ManifestNameRegex = @"[a-zA-Z0-9]{16}";
+    private const string ManifestNameRegex = @"[a-zA-Z0-9]{7}";
     private const string ManifestFileRegex = @"assetbundle\.(en_eu|en_us|zh_cn|zh_tw)?\.?manifest";
 
     private readonly ConfigurationService configurationService;
